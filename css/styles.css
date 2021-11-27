@@ -1,0 +1,40 @@
+#word-input:hover, #magnifier:hover {
+    cursor: pointer;
+}
+
+#word-input:focus {
+    cursor: auto;
+}
+
+#word-meaning {
+    height: 0;
+    transition: height 200ms ease;
+}
+
+.fade-in {
+    opacity: 1;
+    animation: fade-in 200ms ease;
+}
+
+.fade-out {
+    opacity: 0;
+    animation: fade-out 200ms ease;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
